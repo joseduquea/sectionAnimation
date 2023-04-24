@@ -1,14 +1,23 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+    font-family: sans-serif;
+}
 body {
     align-items: baseline;
     display: flex;
     justify-content: center;
+    min-height: 100vh;
     background-color: #222;
-    margin-top: 10%;
 }
 section {
     display: flex;
     width: 800px;
     height: 700px;
+    margin-top: 5%;
+
 }
 section img {
     width: 0;
@@ -23,3 +32,33 @@ section img:hover {
     opacity: 1;
     filter: contrast(130%);
 }
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: auto;
+    height: auto;
+    background: #555;
+    padding: 2.12rem;
+    text-align: center;
+ }
+.icons {
+    display: flex;
+    justify-content: center;
+    margin:0;
+    padding: 0;
+    list-style: none;
+  }
+  .icons a {
+    color: #efefef;
+    transition: all 0.2s ease-in-out;
+    margin-right: 40px;
+  }
+  
+  .icons a:hover {
+    color: rgb(94, 149, 245);
+  }
+  .icons i {
+    font-size: 25px;
+  }
